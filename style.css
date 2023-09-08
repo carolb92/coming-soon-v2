@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'AdiHaus';
+  src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(221deg, #F1F1F1 2.6%, #FFF 96.36%);
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 1.12rem auto;
+}
+
+.mobile-img {
+  background-image: url('https://assets.codepen.io/6060109/mobile-shoes.jpg');
+  background-size: cover;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  height: 15.625rem;
+  width: 100%;
+}
+
+.content-wrapper {
+  text-align: center;
+  margin-top: 1.88rem;
+  font-family: AdiHaus;
+}
+
+.content-wrapper h1 {
+  font-size: 3rem;
+  letter-spacing: 0.3125rem;
+  color: #423A3A;
+  font-weight: 700;
+  max-width: 12.5rem;
+  margin: auto;
+}
+
+span {
+  color: #2F80ED;
+  font-weight: 400;
+  line-height: 2.625rem; /* 87.5% */
+}
+
+.content-wrapper p {
+  color: #333;
+  font-size: 0.875rem;
+  line-height: 1.75rem; /* 200% */
+  margin: auto 2rem;
+}
+
+form {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  max-width: 19.5rem;
+  margin: 2rem auto;
+}
+
+#email {
+  width: 18rem;
+  height: 2.8rem;
+  border-radius: 0.1875rem 0 0 0.1875rem;
+  border: 1px solid #828282;
+  opacity: 0.5;
+  color: #828282;
+  font-family: AdiHaus;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-indent: 1rem;
+}
+
+.btn-go {
+  width: 4rem;
+  height: 2.8rem;
+  background: rgb(102,103,106);
+  background: linear-gradient(90deg, #7C7C7C 0%, #2B2828 100%);
+  border:none;
+  border-radius: 0.1875rem;
+  box-shadow: 0px 15px 20px 0px rgba(66, 58, 58, 0.15);
+  color: #FFF;
+  font-family: AdiHaus;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-left: -2px;
+}
+
+.desktop-img {
+  display:none;
+}
+
+
+@media only screen and (min-width: 768px) { 
+  body {
+    height: 100vh;
+    background-image: url('https://assets.codepen.io/6060109/waves.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+  
+  .container { 
+    width: 60%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 8rem;
+  }
+  
+  .logo {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+  .mobile-img {
+    display: none;
+  }
+  
+  .content-wrapper {
+    text-align: left;
+    width: 27.75rem;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .content-wrapper h1,
+  .content-wrapper p {
+    margin-left: 0;
+  }
+  
+  .content-wrapper h1 {
+    font-size: 4rem;
+    line-height: 4.4375rem;
+    letter-spacing: 0.3125rem;
+  }
+  
+  .content-wrapper p {
+    font-size: 1rem;
+    line-height; 1.75rem;
+  }
+  
+  form {
+    margin-left: 0;
+    min-width: 95%;
+    justify-content: flex-start;
+  }
+  
+  #email {
+    flex-grow: 5;
+  }
+  
+  .btn-go {
+    flex-grow: 1;
+  }
+  
+  .desktop-img {
+    display: block;
+    background-image: url('https://assets.codepen.io/6060109/shoes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+  }
+}
